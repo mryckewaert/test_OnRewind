@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Navbar(): JSX.Element {
   return (
-    <div className="bg-gray-900 border-gray-900">
-      <div>
-        <div>
+    <div className="bg-gray-900 flex flex-col justify-center items-center">
+      <div className="flex justify-around items-center w-full">
+        <div className="flex justify-center w-full ml-20">
           <Image
             src="/images/logo_test.webp"
             width="100"
@@ -12,18 +12,18 @@ export default function Navbar(): JSX.Element {
             alt="logo"
           />
         </div>
-        <div>
+        <div className="flex justify-end mr-2">
           <Image
             src="/images/facebook.webp"
-            width="50"
-            height="50"
+            width="40"
+            height="40"
             alt="logo"
           />
-          <Image src="/images/github.webp" width="50" height="50" alt="logo" />
+          <Image src="/images/github.webp" width="40" height="40" alt="logo" />
           <Image
             src="/images/instagram.webp"
-            width="50"
-            height="50"
+            width="40"
+            height="40"
             alt="logo"
           />
         </div>
