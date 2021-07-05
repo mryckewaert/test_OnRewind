@@ -5,7 +5,7 @@ import MainVideo from "../components/MainVideo";
 
 export default function Funzone({ data }): JSX.Element {
   return (
-    <div className="w-full h-full bg-gray-800 text-gray-500 whitespace-nowrap overflow-ellipsis overflow-hidden">
+    <div className="w-full h-full bg-gray-800">
       <MainVideo />
       <Card data={data} />
     </div>

@@ -21,10 +21,7 @@ export default function Video({ data, dataFunzone, dataTestimonials }) {
         </div>
       </div>
       <div className="flex justify-center">
-        <ReactPlayer
-          url="https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8"
-          controls
-        />
+        <ReactPlayer url={process.env.NEXT_PUBLIC_VIDEO_URL} controls />
       </div>
       <Card
         data={
