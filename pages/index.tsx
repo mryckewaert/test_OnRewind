@@ -5,7 +5,7 @@ import MainVideo from "../components/MainVideo";
 
 export default function Home({ data }): JSX.Element {
   return (
-    <div className="w-full h-full bg-gray-700">
+    <div className="w-full h-full bg-gray-800 text-gray-500">
       <MainVideo />
       <Card data={data} />
     </div>
