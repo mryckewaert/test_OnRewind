@@ -32,3 +32,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## What you need in your .env
+
+URL_ON_REWIND = the url of the endpoint
+KEY_ON_REWIND = the key of the endpoint
+NEXT_PUBLIC_VIDEO_URL= the url of the video
