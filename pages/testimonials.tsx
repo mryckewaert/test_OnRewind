@@ -5,7 +5,7 @@ import MainVideo from "../components/MainVideo";
 
 export default function Testimonials({ data }): JSX.Element {
   return (
-    <div className="w-full h-full bg-gray-700">
+    <div className="w-full h-full bg-gray-800 text-gray-500 whitespace-nowrap overflow-ellipsis overflow-hidden">
       <MainVideo />
       <Card data={data} />
     </div>

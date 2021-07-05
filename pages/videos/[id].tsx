@@ -12,7 +12,7 @@ export default function Video({ data, dataFunzone, dataTestimonials }) {
   const router = useRouter();
 
   return (
-    <div>
+    <div className="w-full h-full bg-gray-800 text-gray-500">
       <div className="flex justify-around">
         <div>{data.video.name}</div>
         <div className="flex justify-between">
@@ -20,12 +20,16 @@ export default function Video({ data, dataFunzone, dataTestimonials }) {
           <div>{data.video.publicationDate}</div>
         </div>
       </div>
-      <ReactPlayer
-        url="https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8"
-        controls
-      />
+      <div className="flex justify-center">
+        <ReactPlayer
+          url="https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8"
+          controls
+        />
+      </div>
       <Card
-        data={router.pathname === "/funzone" ? dataFunzone : dataTestimonials}
+        data={
+          router.query.previous === "/funzone" ? dataFunzone : dataTestimonials
+        }
       />
     </div>
   );
