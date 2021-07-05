@@ -1,17 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar(): JSX.Element {
   return (
     <div className="bg-gray-900 flex flex-col justify-center items-center">
       <div className="flex justify-around items-center w-full">
-        <div className="flex justify-center w-full ml-20">
-          <Image
-            src="/images/logo_test.webp"
-            width="100"
-            height="100"
-            alt="logo"
-          />
-        </div>
+        <Link href="/">
+          <a>
+            <Image
+              src="/images/logo_test.webp"
+              width="100"
+              height="100"
+              alt="logo"
+            />
+          </a>
+        </Link>
         <div className="flex justify-end mr-2">
           <Image
             src="/images/facebook.webp"

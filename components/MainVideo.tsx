@@ -1,13 +1,12 @@
-import "../public/images/OTT-Whitelabel-Background.png";
+import ReactPlayer from "react-player";
 
 export default function MainVideo() {
   return (
     <div>
-      <video
-        src={process.env.VIDEO_URL_800}
+      <ReactPlayer
+        url="https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8"
         controls
-        placeholder="/OTT-Whitelabel-Background.png"
-      ></video>
+      />
     </div>
   );
 }
